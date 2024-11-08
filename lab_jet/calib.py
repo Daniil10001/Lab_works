@@ -32,7 +32,7 @@ if mode=='1':
     plt.title('Измерение длины шага шаговыхдвигателей')
     plt.plot(X,k*X+b,'black', linewidth=1, label='Аппроксимация $y=kx+b$\n'+'$k={0:.2e}{2}см~~b={1:.2f}см$'.format(k,b,'}').replace('e',r'\cdot 10^{'))
     plt.legend()
-    plt.savefig('shag.png')
+    plt.savefig('shag.svg')
 if mode=='2':
     y1=float(input('Значения первого измерения в Па '))
     file1=open(input('имя файла 1: '))
@@ -52,4 +52,4 @@ if mode=='2':
     plt.ylabel('Давление по барометру')
     plt.plot(X,k*X+b, 'black',linewidth=1, label='Аппроксимация $y=kx+b$\n'+'$k={0:.2e}{2}Па~~b={1:.2f}Па$'.format(k,b,'}').replace('e',r'\cdot 10^{'))
     plt.legend()
-    plt.savefig('pressuare.png')
+    plt.savefig('pressuare.svg')
