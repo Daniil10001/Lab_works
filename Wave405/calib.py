@@ -68,7 +68,7 @@ plt.xlabel('Показание АЦП')
 plt.ylabel('Высота жидкости в установке')
 plt.title('Нахождение зависимости высоты жидкости\nв установке от паказаний АЦП')
     
-plt.plot(np.arange(15,255),f(np.arange(15,255),a,b),'black', linewidth=1, label='Аппроксимация $y=a*x+b$\n'+'$a={0:.3f}см~~b={1:.3f}$'.format(a,b))
+plt.plot(np.arange(15,255),f(np.arange(15,255),a,b),'black', linewidth=1, label='Аппроксимация $y=a*x+b$\n'+'$a={0:.3f}см/АЦП~~b={1:.3f} см$'.format(a,b))
 
 plt.legend()
 
